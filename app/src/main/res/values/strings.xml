@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Femto_ProfileUI</string>
+    <string name="premium_plan_price">₹ <font fgcolor='#8F8F8F'><strike>175</strike></font> 150</string>
+    <string name="standard_plan_price">₹ <font fgcolor='#8F8F8F'><strike>105</strike></font> 100</string>
 </resources>

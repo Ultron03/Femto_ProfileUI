@@ -185,6 +185,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/myMembership_button"
             android:layout_width="350dp"
             android:layout_height="70dp"
             android:backgroundTint="@color/light_grey"
