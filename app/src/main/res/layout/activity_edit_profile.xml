@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_grey"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="22dp"
+            android:src="@drawable/femto_logo"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femto"
+            android:textSize="18dp"
+            android:textColor="@color/ligth_blur"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+     >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back_to_profile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="28dp"
+            android:backgroundTint="@color/light_grey"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_back"
+                android:layout_gravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/grey"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:cardCornerRadius="10dp"
+
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_edit"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_edittext_editprofile"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="6dp"
+        android:padding="8dp"
+        android:hint="Radhey Shyam Maan"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"/>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edittext_editprofile"
+        android:weightSum="2"
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_edittext_editprofile"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:padding="8dp"
+            android:layout_weight="0.5"
+            android:hint="+91"
+            android:textSize="18sp"
+            android:inputType="number"
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/black"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_edittext_editprofile"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:padding="8dp"
+            android:layout_weight="1.5"
+            android:hint="9876543210"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email id"
+        android:layout_marginStart="40dp"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_edittext_editprofile"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:hint="yourid@gmail.com"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_button_editprofile"
+        android:layout_gravity="center"
+        android:text="Save Changes"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:text="Discard Changes"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+
+
+
+
+</LinearLayout>
