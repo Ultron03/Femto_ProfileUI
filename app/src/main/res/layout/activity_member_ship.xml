@@ -216,6 +216,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/basicplan_pay"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -309,6 +310,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/standardplan_pay"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
@@ -404,6 +406,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/premiumplan_pay"
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
