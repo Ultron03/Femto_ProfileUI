@@ -37,7 +37,7 @@ class MemberShipActivity : AppCompatActivity() {
         data.put("merchantTransactionId" , System.currentTimeMillis().toString())
         data.put("merchantId", "PGTESTPAYUAT")
         data.put("merchantUserId", System.currentTimeMillis().toString())
-        data.put("amount", 1)
+        data.put("amount", 3500)
         data.put("mobileNumber" ,"8104362445")
         data.put("callbackUrl", "https://webhook.site/d356c195-c606-4fc3-a1ce-91bd0d4a68a0")
 
@@ -61,6 +61,7 @@ class MemberShipActivity : AppCompatActivity() {
 
         btn_basicplan.setOnClickListener {
             try {
+
                 startActivityForResult(PhonePe.getImplicitIntent(
                     this, b2BPGRequest, "")!!,1);
             } catch(e:Exception) {
